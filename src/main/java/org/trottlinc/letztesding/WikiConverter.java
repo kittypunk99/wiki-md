@@ -83,7 +83,7 @@ public class WikiConverter {
                 sb.append("<p>").append(convertInline(line)).append("</p>");
             }
         }
-        if (inList) sb.append("</ul>".repeat(prevListLevel));
+        if (inList)  sb.append("</ul>".repeat(prevListLevel));
         if (inTable) sb.append("</table>");
         sb.append(HTML_FOOTER);
         return sb.toString();
